@@ -1,6 +1,10 @@
 import axios from "axios";
+import dotenv from "dotenv";
 
-const BACK_END_URL = 'http://localhost:5000';
+dotenv.config();
+
+
+const BACK_END_URL = process.env.VITE_API_URL || 'http://localhost:5000';
 
 /**
  * Lista todas as enquetes
