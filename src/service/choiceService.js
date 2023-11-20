@@ -1,10 +1,8 @@
 import axios from "axios";
 import dotenv from "dotenv"
 
-dotenv.config();
 
-
-const BACK_END_URL = process.env.VITE_API_URL || 'http://localhost:5000';
+const BACK_END_URL = 'https://drivencracy-backapi.onrender.com';
 
 /**
  * Lista todas as opções de uma enquete
